@@ -6,8 +6,8 @@ An end-to-end fraud detection system built with:
 - **Docker** for reproducibility and deployment
 
 ## 📂 Project Structure
-'''
-.
+
+```.
 ├── README.md
 ├── data
 │   └── data.tar.gz
@@ -26,5 +26,6 @@ An end-to-end fraud detection system built with:
     │   └── feature_engineering.py
     ├── models
     │   └── model.py
-    └── utils
-'''
+    └── utils```
+
+
