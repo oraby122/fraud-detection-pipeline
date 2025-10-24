@@ -1,0 +1,300 @@
+[2025-07-20T21:21:32.467+0000] {logging_mixin.py:151} INFO - Changing /opt/***/logs/dag_id=fraud_detection_pipeline/run_id=manual__2025-07-20T21:21:30.260533+00:00/task_id=aggregate_and_store_pickle_data permission to 509
+[2025-07-20T21:21:32.467+0000] {logging_mixin.py:151} INFO - Failed to change /opt/***/logs/dag_id=fraud_detection_pipeline/run_id=manual__2025-07-20T21:21:30.260533+00:00/task_id=aggregate_and_store_pickle_data permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=fraud_detection_pipeline/run_id=manual__2025-07-20T21:21:30.260533+00:00/task_id=aggregate_and_store_pickle_data'
+[2025-07-20T21:21:32.482+0000] {logging_mixin.py:151} INFO - Changing /opt/***/logs/dag_id=fraud_detection_pipeline/run_id=manual__2025-07-20T21:21:30.260533+00:00/task_id=aggregate_and_store_pickle_data permission to 509
+[2025-07-20T21:21:32.482+0000] {logging_mixin.py:151} INFO - Failed to change /opt/***/logs/dag_id=fraud_detection_pipeline/run_id=manual__2025-07-20T21:21:30.260533+00:00/task_id=aggregate_and_store_pickle_data permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=fraud_detection_pipeline/run_id=manual__2025-07-20T21:21:30.260533+00:00/task_id=aggregate_and_store_pickle_data'
+[2025-07-20T21:21:32.500+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fraud_detection_pipeline.aggregate_and_store_pickle_data manual__2025-07-20T21:21:30.260533+00:00 [queued]>
+[2025-07-20T21:21:32.504+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fraud_detection_pipeline.aggregate_and_store_pickle_data manual__2025-07-20T21:21:30.260533+00:00 [queued]>
+[2025-07-20T21:21:32.504+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 1
+[2025-07-20T21:21:32.511+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): aggregate_and_store_pickle_data> on 2025-07-20 21:21:30.260533+00:00
+[2025-07-20T21:21:32.514+0000] {standard_task_runner.py:57} INFO - Started process 199 to run task
+[2025-07-20T21:21:32.516+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'fraud_detection_pipeline', 'aggregate_and_store_pickle_data', 'manual__2025-07-20T21:21:30.260533+00:00', '--job-id', '8', '--raw', '--subdir', 'DAGS_FOLDER/fraud_pipeline_dag.py', '--cfg-path', '/tmp/tmpmx0usc85']
+[2025-07-20T21:21:32.517+0000] {standard_task_runner.py:85} INFO - Job 8: Subtask aggregate_and_store_pickle_data
+[2025-07-20T21:21:32.528+0000] {logging_mixin.py:151} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-20T21:21:32.548+0000] {logging_mixin.py:151} INFO - Changing /opt/***/logs/dag_id=fraud_detection_pipeline/run_id=manual__2025-07-20T21:21:30.260533+00:00/task_id=aggregate_and_store_pickle_data permission to 509
+[2025-07-20T21:21:32.548+0000] {logging_mixin.py:151} INFO - Failed to change /opt/***/logs/dag_id=fraud_detection_pipeline/run_id=manual__2025-07-20T21:21:30.260533+00:00/task_id=aggregate_and_store_pickle_data permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=fraud_detection_pipeline/run_id=manual__2025-07-20T21:21:30.260533+00:00/task_id=aggregate_and_store_pickle_data'
+[2025-07-20T21:21:32.549+0000] {task_command.py:415} INFO - Running <TaskInstance: fraud_detection_pipeline.aggregate_and_store_pickle_data manual__2025-07-20T21:21:30.260533+00:00 [running]> on host 9555ccf33d88
+[2025-07-20T21:21:32.589+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='fraud_detection_pipeline' AIRFLOW_CTX_TASK_ID='aggregate_and_store_pickle_data' AIRFLOW_CTX_EXECUTION_DATE='2025-07-20T21:21:30.260533+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-07-20T21:21:30.260533+00:00'
+[2025-07-20T21:21:32.590+0000] {fraud_pipeline_dag.py:15} INFO - Reading pickle files from /opt/***/data/data_raw
+[2025-07-20T21:21:32.592+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-01.pkl
+[2025-07-20T21:21:32.603+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-02.pkl
+[2025-07-20T21:21:32.613+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-03.pkl
+[2025-07-20T21:21:32.622+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-04.pkl
+[2025-07-20T21:21:32.630+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-05.pkl
+[2025-07-20T21:21:32.639+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-06.pkl
+[2025-07-20T21:21:32.648+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-07.pkl
+[2025-07-20T21:21:32.656+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-08.pkl
+[2025-07-20T21:21:32.665+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-09.pkl
+[2025-07-20T21:21:32.673+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-10.pkl
+[2025-07-20T21:21:32.681+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-11.pkl
+[2025-07-20T21:21:32.690+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-12.pkl
+[2025-07-20T21:21:32.699+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-13.pkl
+[2025-07-20T21:21:32.709+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-14.pkl
+[2025-07-20T21:21:32.721+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-15.pkl
+[2025-07-20T21:21:32.731+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-16.pkl
+[2025-07-20T21:21:32.759+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-17.pkl
+[2025-07-20T21:21:32.766+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-18.pkl
+[2025-07-20T21:21:32.775+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-19.pkl
+[2025-07-20T21:21:32.782+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-20.pkl
+[2025-07-20T21:21:32.789+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-21.pkl
+[2025-07-20T21:21:32.797+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-22.pkl
+[2025-07-20T21:21:32.804+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-23.pkl
+[2025-07-20T21:21:32.811+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-24.pkl
+[2025-07-20T21:21:32.819+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-25.pkl
+[2025-07-20T21:21:32.828+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-26.pkl
+[2025-07-20T21:21:32.837+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-27.pkl
+[2025-07-20T21:21:32.863+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-28.pkl
+[2025-07-20T21:21:32.871+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-29.pkl
+[2025-07-20T21:21:32.879+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-30.pkl
+[2025-07-20T21:21:32.887+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-01.pkl
+[2025-07-20T21:21:32.895+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-02.pkl
+[2025-07-20T21:21:32.902+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-03.pkl
+[2025-07-20T21:21:32.911+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-04.pkl
+[2025-07-20T21:21:32.919+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-05.pkl
+[2025-07-20T21:21:32.928+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-06.pkl
+[2025-07-20T21:21:32.937+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-07.pkl
+[2025-07-20T21:21:32.946+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-08.pkl
+[2025-07-20T21:21:32.954+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-09.pkl
+[2025-07-20T21:21:32.963+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-10.pkl
+[2025-07-20T21:21:32.971+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-11.pkl
+[2025-07-20T21:21:32.979+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-12.pkl
+[2025-07-20T21:21:32.988+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-13.pkl
+[2025-07-20T21:21:32.996+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-14.pkl
+[2025-07-20T21:21:33.004+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-15.pkl
+[2025-07-20T21:21:33.013+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-16.pkl
+[2025-07-20T21:21:33.022+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-17.pkl
+[2025-07-20T21:21:33.032+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-18.pkl
+[2025-07-20T21:21:33.041+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-19.pkl
+[2025-07-20T21:21:33.052+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-20.pkl
+[2025-07-20T21:21:33.065+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-21.pkl
+[2025-07-20T21:21:33.073+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-22.pkl
+[2025-07-20T21:21:33.083+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-23.pkl
+[2025-07-20T21:21:33.090+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-24.pkl
+[2025-07-20T21:21:33.100+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-25.pkl
+[2025-07-20T21:21:33.107+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-26.pkl
+[2025-07-20T21:21:33.115+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-27.pkl
+[2025-07-20T21:21:33.123+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-28.pkl
+[2025-07-20T21:21:33.131+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-29.pkl
+[2025-07-20T21:21:33.139+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-30.pkl
+[2025-07-20T21:21:33.147+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-31.pkl
+[2025-07-20T21:21:33.156+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-01.pkl
+[2025-07-20T21:21:33.164+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-02.pkl
+[2025-07-20T21:21:33.172+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-03.pkl
+[2025-07-20T21:21:33.180+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-04.pkl
+[2025-07-20T21:21:33.190+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-05.pkl
+[2025-07-20T21:21:33.197+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-06.pkl
+[2025-07-20T21:21:33.206+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-07.pkl
+[2025-07-20T21:21:33.214+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-08.pkl
+[2025-07-20T21:21:33.231+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-09.pkl
+[2025-07-20T21:21:33.240+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-10.pkl
+[2025-07-20T21:21:33.249+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-11.pkl
+[2025-07-20T21:21:33.257+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-12.pkl
+[2025-07-20T21:21:33.267+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-13.pkl
+[2025-07-20T21:21:33.276+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-14.pkl
+[2025-07-20T21:21:33.284+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-15.pkl
+[2025-07-20T21:21:33.292+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-16.pkl
+[2025-07-20T21:21:33.301+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-17.pkl
+[2025-07-20T21:21:33.308+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-18.pkl
+[2025-07-20T21:21:33.319+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-19.pkl
+[2025-07-20T21:21:33.326+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-20.pkl
+[2025-07-20T21:21:33.346+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-21.pkl
+[2025-07-20T21:21:33.357+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-22.pkl
+[2025-07-20T21:21:33.368+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-23.pkl
+[2025-07-20T21:21:33.379+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-24.pkl
+[2025-07-20T21:21:33.388+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-25.pkl
+[2025-07-20T21:21:33.397+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-26.pkl
+[2025-07-20T21:21:33.406+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-27.pkl
+[2025-07-20T21:21:33.420+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-28.pkl
+[2025-07-20T21:21:33.437+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-29.pkl
+[2025-07-20T21:21:33.455+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-30.pkl
+[2025-07-20T21:21:33.473+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-01.pkl
+[2025-07-20T21:21:33.494+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-02.pkl
+[2025-07-20T21:21:33.512+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-03.pkl
+[2025-07-20T21:21:33.528+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-04.pkl
+[2025-07-20T21:21:33.539+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-05.pkl
+[2025-07-20T21:21:33.552+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-06.pkl
+[2025-07-20T21:21:33.564+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-07.pkl
+[2025-07-20T21:21:33.576+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-08.pkl
+[2025-07-20T21:21:33.588+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-09.pkl
+[2025-07-20T21:21:33.600+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-10.pkl
+[2025-07-20T21:21:33.611+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-11.pkl
+[2025-07-20T21:21:33.620+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-12.pkl
+[2025-07-20T21:21:33.630+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-13.pkl
+[2025-07-20T21:21:33.640+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-14.pkl
+[2025-07-20T21:21:33.649+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-15.pkl
+[2025-07-20T21:21:33.659+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-16.pkl
+[2025-07-20T21:21:33.669+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-17.pkl
+[2025-07-20T21:21:33.680+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-18.pkl
+[2025-07-20T21:21:33.690+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-19.pkl
+[2025-07-20T21:21:33.701+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-20.pkl
+[2025-07-20T21:21:33.710+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-21.pkl
+[2025-07-20T21:21:33.718+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-22.pkl
+[2025-07-20T21:21:33.727+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-23.pkl
+[2025-07-20T21:21:33.735+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-24.pkl
+[2025-07-20T21:21:33.743+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-25.pkl
+[2025-07-20T21:21:33.752+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-26.pkl
+[2025-07-20T21:21:33.760+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-27.pkl
+[2025-07-20T21:21:33.768+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-28.pkl
+[2025-07-20T21:21:33.776+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-29.pkl
+[2025-07-20T21:21:33.785+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-30.pkl
+[2025-07-20T21:21:33.794+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-31.pkl
+[2025-07-20T21:21:33.807+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-01.pkl
+[2025-07-20T21:21:33.815+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-02.pkl
+[2025-07-20T21:21:33.827+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-03.pkl
+[2025-07-20T21:21:33.836+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-04.pkl
+[2025-07-20T21:21:33.844+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-05.pkl
+[2025-07-20T21:21:33.868+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-06.pkl
+[2025-07-20T21:21:33.877+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-07.pkl
+[2025-07-20T21:21:33.885+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-08.pkl
+[2025-07-20T21:21:33.894+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-09.pkl
+[2025-07-20T21:21:33.902+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-10.pkl
+[2025-07-20T21:21:33.910+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-11.pkl
+[2025-07-20T21:21:33.918+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-12.pkl
+[2025-07-20T21:21:33.927+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-13.pkl
+[2025-07-20T21:21:33.937+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-14.pkl
+[2025-07-20T21:21:33.946+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-15.pkl
+[2025-07-20T21:21:33.954+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-16.pkl
+[2025-07-20T21:21:33.963+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-17.pkl
+[2025-07-20T21:21:33.972+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-18.pkl
+[2025-07-20T21:21:33.980+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-19.pkl
+[2025-07-20T21:21:33.989+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-20.pkl
+[2025-07-20T21:21:33.997+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-21.pkl
+[2025-07-20T21:21:34.005+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-22.pkl
+[2025-07-20T21:21:34.013+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-23.pkl
+[2025-07-20T21:21:34.022+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-24.pkl
+[2025-07-20T21:21:34.030+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-25.pkl
+[2025-07-20T21:21:34.038+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-26.pkl
+[2025-07-20T21:21:34.046+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-27.pkl
+[2025-07-20T21:21:34.056+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-28.pkl
+[2025-07-20T21:21:34.064+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-29.pkl
+[2025-07-20T21:21:34.073+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-30.pkl
+[2025-07-20T21:21:34.081+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-31.pkl
+[2025-07-20T21:21:34.100+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-01.pkl
+[2025-07-20T21:21:34.114+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-02.pkl
+[2025-07-20T21:21:34.124+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-03.pkl
+[2025-07-20T21:21:34.134+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-04.pkl
+[2025-07-20T21:21:34.147+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-05.pkl
+[2025-07-20T21:21:34.163+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-06.pkl
+[2025-07-20T21:21:34.234+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-07.pkl
+[2025-07-20T21:21:34.296+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-08.pkl
+[2025-07-20T21:21:34.345+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-09.pkl
+[2025-07-20T21:21:34.355+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-10.pkl
+[2025-07-20T21:21:34.364+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-11.pkl
+[2025-07-20T21:21:34.371+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-12.pkl
+[2025-07-20T21:21:34.380+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-13.pkl
+[2025-07-20T21:21:34.389+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-14.pkl
+[2025-07-20T21:21:34.398+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-15.pkl
+[2025-07-20T21:21:34.405+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-16.pkl
+[2025-07-20T21:21:34.414+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-17.pkl
+[2025-07-20T21:21:34.422+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-18.pkl
+[2025-07-20T21:21:34.431+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-19.pkl
+[2025-07-20T21:21:34.440+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-20.pkl
+[2025-07-20T21:21:34.551+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-21.pkl
+[2025-07-20T21:21:34.560+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-22.pkl
+[2025-07-20T21:21:34.567+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-23.pkl
+[2025-07-20T21:21:34.576+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-24.pkl
+[2025-07-20T21:21:34.584+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-25.pkl
+[2025-07-20T21:21:34.592+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-26.pkl
+[2025-07-20T21:21:34.601+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-27.pkl
+[2025-07-20T21:21:34.608+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-28.pkl
+[2025-07-20T21:21:34.618+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-29.pkl
+[2025-07-20T21:21:34.625+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-30.pkl
+[2025-07-20T21:21:34.807+0000] {fraud_pipeline_dag.py:31} INFO - Total rows to insert: 1754155
+[2025-07-20T21:22:35.296+0000] {job.py:219} ERROR - Job heartbeat got an exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 691, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "postgres" to address: Temporary failure in name resolution
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/jobs/job.py", line 190, in heartbeat
+    session.merge(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3056, in merge
+    return self._merge(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3136, in _merge
+    merged = self.get(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 2853, in get
+    return self._get_impl(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 2975, in _get_impl
+    return db_load_fn(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/loading.py", line 530, in load_on_pk_identity
+    session.execute(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 1716, in execute
+    conn = self._connection_for_bind(bind)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 1555, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 750, in _connection_for_bind
+    conn = bind.connect()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/future/engine.py", line 406, in connect
+    return super(Engine, self).connect()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3325, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3404, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3374, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 2208, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 691, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name "postgres" to address: Temporary failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)

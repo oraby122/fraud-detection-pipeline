@@ -1,0 +1,71 @@
+[2025-07-21T14:26:23.903+0000] {logging_mixin.py:151} INFO - Changing /opt/***/logs/dag_id=feature_engineering_dag/run_id=manual__2025-07-21T14:26:21.292318+00:00/task_id=run_feature_engineering permission to 509
+[2025-07-21T14:26:23.904+0000] {logging_mixin.py:151} INFO - Failed to change /opt/***/logs/dag_id=feature_engineering_dag/run_id=manual__2025-07-21T14:26:21.292318+00:00/task_id=run_feature_engineering permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=feature_engineering_dag/run_id=manual__2025-07-21T14:26:21.292318+00:00/task_id=run_feature_engineering'
+[2025-07-21T14:26:23.918+0000] {logging_mixin.py:151} INFO - Changing /opt/***/logs/dag_id=feature_engineering_dag/run_id=manual__2025-07-21T14:26:21.292318+00:00/task_id=run_feature_engineering permission to 509
+[2025-07-21T14:26:23.919+0000] {logging_mixin.py:151} INFO - Failed to change /opt/***/logs/dag_id=feature_engineering_dag/run_id=manual__2025-07-21T14:26:21.292318+00:00/task_id=run_feature_engineering permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=feature_engineering_dag/run_id=manual__2025-07-21T14:26:21.292318+00:00/task_id=run_feature_engineering'
+[2025-07-21T14:26:23.940+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: feature_engineering_dag.run_feature_engineering manual__2025-07-21T14:26:21.292318+00:00 [queued]>
+[2025-07-21T14:26:23.944+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: feature_engineering_dag.run_feature_engineering manual__2025-07-21T14:26:21.292318+00:00 [queued]>
+[2025-07-21T14:26:23.944+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2025-07-21T14:26:23.950+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): run_feature_engineering> on 2025-07-21 14:26:21.292318+00:00
+[2025-07-21T14:26:23.953+0000] {standard_task_runner.py:57} INFO - Started process 332 to run task
+[2025-07-21T14:26:23.955+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'feature_engineering_dag', 'run_feature_engineering', 'manual__2025-07-21T14:26:21.292318+00:00', '--job-id', '61', '--raw', '--subdir', 'DAGS_FOLDER/feature_engineering.py', '--cfg-path', '/tmp/tmpx49zqst4']
+[2025-07-21T14:26:23.956+0000] {standard_task_runner.py:85} INFO - Job 61: Subtask run_feature_engineering
+[2025-07-21T14:26:23.966+0000] {logging_mixin.py:151} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-21T14:26:23.985+0000] {logging_mixin.py:151} INFO - Changing /opt/***/logs/dag_id=feature_engineering_dag/run_id=manual__2025-07-21T14:26:21.292318+00:00/task_id=run_feature_engineering permission to 509
+[2025-07-21T14:26:23.985+0000] {logging_mixin.py:151} INFO - Failed to change /opt/***/logs/dag_id=feature_engineering_dag/run_id=manual__2025-07-21T14:26:21.292318+00:00/task_id=run_feature_engineering permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=feature_engineering_dag/run_id=manual__2025-07-21T14:26:21.292318+00:00/task_id=run_feature_engineering'
+[2025-07-21T14:26:23.986+0000] {task_command.py:415} INFO - Running <TaskInstance: feature_engineering_dag.run_feature_engineering manual__2025-07-21T14:26:21.292318+00:00 [running]> on host 94007307d8a8
+[2025-07-21T14:26:24.023+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='feature_engineering_dag' AIRFLOW_CTX_TASK_ID='run_feature_engineering' AIRFLOW_CTX_EXECUTION_DATE='2025-07-21T14:26:21.292318+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-07-21T14:26:21.292318+00:00'
+[2025-07-21T14:26:24.034+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1910, in _execute_context
+    self.dialect.do_execute(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedTable: relation "transactions" does not exist
+LINE 1: SELECT * FROM transactions
+                      ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/feature_engineering.py", line 26, in feature_engineering
+    df = pd.read_sql("SELECT * FROM transactions", engine)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/sql.py", line 663, in read_sql
+    return pandas_sql.read_query(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/sql.py", line 1738, in read_query
+    result = self.execute(sql, params)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/sql.py", line 1562, in execute
+    return self.con.exec_driver_sql(sql, *args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1770, in exec_driver_sql
+    return self._exec_driver_sql(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1674, in _exec_driver_sql
+    ret = self._execute_context(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1953, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 2134, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1910, in _execute_context
+    self.dialect.do_execute(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedTable) relation "transactions" does not exist
+LINE 1: SELECT * FROM transactions
+                      ^
+
+[SQL: SELECT * FROM transactions]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2025-07-21T14:26:24.050+0000] {taskinstance.py:1398} INFO - Marking task as UP_FOR_RETRY. dag_id=feature_engineering_dag, task_id=run_feature_engineering, execution_date=20250721T142621, start_date=20250721T142623, end_date=20250721T142624
+[2025-07-21T14:26:24.057+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 61 for task run_feature_engineering ((psycopg2.errors.UndefinedTable) relation "transactions" does not exist
+LINE 1: SELECT * FROM transactions
+                      ^
+
+[SQL: SELECT * FROM transactions]
+(Background on this error at: https://sqlalche.me/e/14/f405); 332)
+[2025-07-21T14:26:24.087+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2025-07-21T14:26:24.098+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

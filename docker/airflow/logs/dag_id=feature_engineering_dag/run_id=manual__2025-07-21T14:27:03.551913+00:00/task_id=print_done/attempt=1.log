@@ -1,0 +1,21 @@
+[2025-07-21T14:35:26.321+0000] {logging_mixin.py:151} INFO - Changing /opt/***/logs/dag_id=feature_engineering_dag/run_id=manual__2025-07-21T14:27:03.551913+00:00/task_id=print_done permission to 509
+[2025-07-21T14:35:26.321+0000] {logging_mixin.py:151} INFO - Failed to change /opt/***/logs/dag_id=feature_engineering_dag/run_id=manual__2025-07-21T14:27:03.551913+00:00/task_id=print_done permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=feature_engineering_dag/run_id=manual__2025-07-21T14:27:03.551913+00:00/task_id=print_done'
+[2025-07-21T14:35:26.335+0000] {logging_mixin.py:151} INFO - Changing /opt/***/logs/dag_id=feature_engineering_dag/run_id=manual__2025-07-21T14:27:03.551913+00:00/task_id=print_done permission to 509
+[2025-07-21T14:35:26.335+0000] {logging_mixin.py:151} INFO - Failed to change /opt/***/logs/dag_id=feature_engineering_dag/run_id=manual__2025-07-21T14:27:03.551913+00:00/task_id=print_done permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=feature_engineering_dag/run_id=manual__2025-07-21T14:27:03.551913+00:00/task_id=print_done'
+[2025-07-21T14:35:26.351+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: feature_engineering_dag.print_done manual__2025-07-21T14:27:03.551913+00:00 [queued]>
+[2025-07-21T14:35:26.356+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: feature_engineering_dag.print_done manual__2025-07-21T14:27:03.551913+00:00 [queued]>
+[2025-07-21T14:35:26.357+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2025-07-21T14:35:26.362+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): print_done> on 2025-07-21 14:27:03.551913+00:00
+[2025-07-21T14:35:26.366+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'feature_engineering_dag', 'print_done', 'manual__2025-07-21T14:27:03.551913+00:00', '--job-id', '65', '--raw', '--subdir', 'DAGS_FOLDER/feature_engineering.py', '--cfg-path', '/tmp/tmp9khkn39r']
+[2025-07-21T14:35:26.368+0000] {standard_task_runner.py:85} INFO - Job 65: Subtask print_done
+[2025-07-21T14:35:26.365+0000] {standard_task_runner.py:57} INFO - Started process 500 to run task
+[2025-07-21T14:35:26.376+0000] {logging_mixin.py:151} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-21T14:35:26.397+0000] {logging_mixin.py:151} INFO - Changing /opt/***/logs/dag_id=feature_engineering_dag/run_id=manual__2025-07-21T14:27:03.551913+00:00/task_id=print_done permission to 509
+[2025-07-21T14:35:26.397+0000] {logging_mixin.py:151} INFO - Failed to change /opt/***/logs/dag_id=feature_engineering_dag/run_id=manual__2025-07-21T14:27:03.551913+00:00/task_id=print_done permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=feature_engineering_dag/run_id=manual__2025-07-21T14:27:03.551913+00:00/task_id=print_done'
+[2025-07-21T14:35:26.398+0000] {task_command.py:415} INFO - Running <TaskInstance: feature_engineering_dag.print_done manual__2025-07-21T14:27:03.551913+00:00 [running]> on host 94007307d8a8
+[2025-07-21T14:35:26.432+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='feature_engineering_dag' AIRFLOW_CTX_TASK_ID='print_done' AIRFLOW_CTX_EXECUTION_DATE='2025-07-21T14:27:03.551913+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-07-21T14:27:03.551913+00:00'
+[2025-07-21T14:35:26.432+0000] {logging_mixin.py:151} INFO - Feature engineering completed and data stored in 'transactions_features'.
+[2025-07-21T14:35:26.433+0000] {python.py:194} INFO - Done. Returned value was: None
+[2025-07-21T14:35:26.436+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=feature_engineering_dag, task_id=print_done, execution_date=20250721T142703, start_date=20250721T143526, end_date=20250721T143526
+[2025-07-21T14:35:26.461+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-07-21T14:35:26.469+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,206 @@
+[2025-07-21T13:41:07.727+0000] {logging_mixin.py:151} INFO - Changing /opt/***/logs/dag_id=fraud_detection_pipeline/run_id=manual__2025-07-21T13:41:05.172759+00:00/task_id=aggregate_and_store_pickle_data permission to 509
+[2025-07-21T13:41:07.727+0000] {logging_mixin.py:151} INFO - Failed to change /opt/***/logs/dag_id=fraud_detection_pipeline/run_id=manual__2025-07-21T13:41:05.172759+00:00/task_id=aggregate_and_store_pickle_data permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=fraud_detection_pipeline/run_id=manual__2025-07-21T13:41:05.172759+00:00/task_id=aggregate_and_store_pickle_data'
+[2025-07-21T13:41:07.746+0000] {logging_mixin.py:151} INFO - Changing /opt/***/logs/dag_id=fraud_detection_pipeline/run_id=manual__2025-07-21T13:41:05.172759+00:00/task_id=aggregate_and_store_pickle_data permission to 509
+[2025-07-21T13:41:07.746+0000] {logging_mixin.py:151} INFO - Failed to change /opt/***/logs/dag_id=fraud_detection_pipeline/run_id=manual__2025-07-21T13:41:05.172759+00:00/task_id=aggregate_and_store_pickle_data permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=fraud_detection_pipeline/run_id=manual__2025-07-21T13:41:05.172759+00:00/task_id=aggregate_and_store_pickle_data'
+[2025-07-21T13:41:07.766+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fraud_detection_pipeline.aggregate_and_store_pickle_data manual__2025-07-21T13:41:05.172759+00:00 [queued]>
+[2025-07-21T13:41:07.770+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fraud_detection_pipeline.aggregate_and_store_pickle_data manual__2025-07-21T13:41:05.172759+00:00 [queued]>
+[2025-07-21T13:41:07.770+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 1
+[2025-07-21T13:41:07.777+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): aggregate_and_store_pickle_data> on 2025-07-21 13:41:05.172759+00:00
+[2025-07-21T13:41:07.779+0000] {standard_task_runner.py:57} INFO - Started process 168 to run task
+[2025-07-21T13:41:07.781+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'fraud_detection_pipeline', 'aggregate_and_store_pickle_data', 'manual__2025-07-21T13:41:05.172759+00:00', '--job-id', '51', '--raw', '--subdir', 'DAGS_FOLDER/fraud_pipeline_dag.py', '--cfg-path', '/tmp/tmpqxruf93b']
+[2025-07-21T13:41:07.782+0000] {standard_task_runner.py:85} INFO - Job 51: Subtask aggregate_and_store_pickle_data
+[2025-07-21T13:41:07.792+0000] {logging_mixin.py:151} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-21T13:41:07.809+0000] {logging_mixin.py:151} INFO - Changing /opt/***/logs/dag_id=fraud_detection_pipeline/run_id=manual__2025-07-21T13:41:05.172759+00:00/task_id=aggregate_and_store_pickle_data permission to 509
+[2025-07-21T13:41:07.810+0000] {logging_mixin.py:151} INFO - Failed to change /opt/***/logs/dag_id=fraud_detection_pipeline/run_id=manual__2025-07-21T13:41:05.172759+00:00/task_id=aggregate_and_store_pickle_data permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=fraud_detection_pipeline/run_id=manual__2025-07-21T13:41:05.172759+00:00/task_id=aggregate_and_store_pickle_data'
+[2025-07-21T13:41:07.811+0000] {task_command.py:415} INFO - Running <TaskInstance: fraud_detection_pipeline.aggregate_and_store_pickle_data manual__2025-07-21T13:41:05.172759+00:00 [running]> on host da615bb59f10
+[2025-07-21T13:41:07.851+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='fraud_detection_pipeline' AIRFLOW_CTX_TASK_ID='aggregate_and_store_pickle_data' AIRFLOW_CTX_EXECUTION_DATE='2025-07-21T13:41:05.172759+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-07-21T13:41:05.172759+00:00'
+[2025-07-21T13:41:07.852+0000] {fraud_pipeline_dag.py:22} INFO - Reading pickle files from /opt/***/data/data_raw
+[2025-07-21T13:41:07.852+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-04-01.pkl
+[2025-07-21T13:41:07.863+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-04-02.pkl
+[2025-07-21T13:41:07.869+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-04-03.pkl
+[2025-07-21T13:41:07.876+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-04-04.pkl
+[2025-07-21T13:41:07.884+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-04-05.pkl
+[2025-07-21T13:41:07.890+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-04-06.pkl
+[2025-07-21T13:41:07.897+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-04-07.pkl
+[2025-07-21T13:41:07.903+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-04-08.pkl
+[2025-07-21T13:41:07.910+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-04-09.pkl
+[2025-07-21T13:41:07.917+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-04-10.pkl
+[2025-07-21T13:41:07.923+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-04-11.pkl
+[2025-07-21T13:41:07.930+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-04-12.pkl
+[2025-07-21T13:41:07.936+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-04-13.pkl
+[2025-07-21T13:41:07.944+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-04-14.pkl
+[2025-07-21T13:41:07.951+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-04-15.pkl
+[2025-07-21T13:41:07.957+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-04-16.pkl
+[2025-07-21T13:41:07.965+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-04-17.pkl
+[2025-07-21T13:41:07.972+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-04-18.pkl
+[2025-07-21T13:41:07.979+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-04-19.pkl
+[2025-07-21T13:41:07.985+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-04-20.pkl
+[2025-07-21T13:41:07.992+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-04-21.pkl
+[2025-07-21T13:41:07.999+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-04-22.pkl
+[2025-07-21T13:41:08.006+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-04-23.pkl
+[2025-07-21T13:41:08.013+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-04-24.pkl
+[2025-07-21T13:41:08.020+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-04-25.pkl
+[2025-07-21T13:41:08.028+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-04-26.pkl
+[2025-07-21T13:41:08.036+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-04-27.pkl
+[2025-07-21T13:41:08.044+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-04-28.pkl
+[2025-07-21T13:41:08.051+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-04-29.pkl
+[2025-07-21T13:41:08.059+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-04-30.pkl
+[2025-07-21T13:41:08.066+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-05-01.pkl
+[2025-07-21T13:41:08.075+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-05-02.pkl
+[2025-07-21T13:41:08.083+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-05-03.pkl
+[2025-07-21T13:41:08.090+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-05-04.pkl
+[2025-07-21T13:41:08.098+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-05-05.pkl
+[2025-07-21T13:41:08.105+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-05-06.pkl
+[2025-07-21T13:41:08.113+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-05-07.pkl
+[2025-07-21T13:41:08.121+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-05-08.pkl
+[2025-07-21T13:41:08.130+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-05-09.pkl
+[2025-07-21T13:41:08.136+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-05-10.pkl
+[2025-07-21T13:41:08.143+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-05-11.pkl
+[2025-07-21T13:41:08.149+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-05-12.pkl
+[2025-07-21T13:41:08.156+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-05-13.pkl
+[2025-07-21T13:41:08.163+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-05-14.pkl
+[2025-07-21T13:41:08.170+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-05-15.pkl
+[2025-07-21T13:41:08.177+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-05-16.pkl
+[2025-07-21T13:41:08.184+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-05-17.pkl
+[2025-07-21T13:41:08.191+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-05-18.pkl
+[2025-07-21T13:41:08.198+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-05-19.pkl
+[2025-07-21T13:41:08.205+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-05-20.pkl
+[2025-07-21T13:41:08.212+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-05-21.pkl
+[2025-07-21T13:41:08.218+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-05-22.pkl
+[2025-07-21T13:41:08.226+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-05-23.pkl
+[2025-07-21T13:41:08.232+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-05-24.pkl
+[2025-07-21T13:41:08.245+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-05-25.pkl
+[2025-07-21T13:41:08.253+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-05-26.pkl
+[2025-07-21T13:41:08.260+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-05-27.pkl
+[2025-07-21T13:41:08.285+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-05-28.pkl
+[2025-07-21T13:41:08.292+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-05-29.pkl
+[2025-07-21T13:41:08.298+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-05-30.pkl
+[2025-07-21T13:41:08.305+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-05-31.pkl
+[2025-07-21T13:41:08.332+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-06-01.pkl
+[2025-07-21T13:41:08.339+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-06-02.pkl
+[2025-07-21T13:41:08.346+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-06-03.pkl
+[2025-07-21T13:41:08.353+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-06-04.pkl
+[2025-07-21T13:41:08.365+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-06-05.pkl
+[2025-07-21T13:41:08.376+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-06-06.pkl
+[2025-07-21T13:41:08.385+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-06-07.pkl
+[2025-07-21T13:41:08.393+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-06-08.pkl
+[2025-07-21T13:41:08.414+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-06-09.pkl
+[2025-07-21T13:41:08.422+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-06-10.pkl
+[2025-07-21T13:41:08.430+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-06-11.pkl
+[2025-07-21T13:41:08.438+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-06-12.pkl
+[2025-07-21T13:41:08.446+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-06-13.pkl
+[2025-07-21T13:41:08.453+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-06-14.pkl
+[2025-07-21T13:41:08.461+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-06-15.pkl
+[2025-07-21T13:41:08.467+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-06-16.pkl
+[2025-07-21T13:41:08.475+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-06-17.pkl
+[2025-07-21T13:41:08.481+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-06-18.pkl
+[2025-07-21T13:41:08.487+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-06-19.pkl
+[2025-07-21T13:41:08.494+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-06-20.pkl
+[2025-07-21T13:41:08.500+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-06-21.pkl
+[2025-07-21T13:41:08.507+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-06-22.pkl
+[2025-07-21T13:41:08.514+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-06-23.pkl
+[2025-07-21T13:41:08.521+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-06-24.pkl
+[2025-07-21T13:41:08.527+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-06-25.pkl
+[2025-07-21T13:41:08.535+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-06-26.pkl
+[2025-07-21T13:41:08.542+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-06-27.pkl
+[2025-07-21T13:41:08.549+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-06-28.pkl
+[2025-07-21T13:41:08.555+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-06-29.pkl
+[2025-07-21T13:41:08.562+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-06-30.pkl
+[2025-07-21T13:41:08.569+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-07-01.pkl
+[2025-07-21T13:41:08.576+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-07-02.pkl
+[2025-07-21T13:41:08.583+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-07-03.pkl
+[2025-07-21T13:41:08.590+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-07-04.pkl
+[2025-07-21T13:41:08.597+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-07-05.pkl
+[2025-07-21T13:41:08.604+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-07-06.pkl
+[2025-07-21T13:41:08.611+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-07-07.pkl
+[2025-07-21T13:41:08.618+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-07-08.pkl
+[2025-07-21T13:41:08.626+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-07-09.pkl
+[2025-07-21T13:41:08.632+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-07-10.pkl
+[2025-07-21T13:41:08.639+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-07-11.pkl
+[2025-07-21T13:41:08.645+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-07-12.pkl
+[2025-07-21T13:41:08.652+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-07-13.pkl
+[2025-07-21T13:41:08.659+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-07-14.pkl
+[2025-07-21T13:41:08.666+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-07-15.pkl
+[2025-07-21T13:41:08.673+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-07-16.pkl
+[2025-07-21T13:41:08.680+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-07-17.pkl
+[2025-07-21T13:41:08.689+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-07-18.pkl
+[2025-07-21T13:41:08.696+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-07-19.pkl
+[2025-07-21T13:41:08.705+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-07-20.pkl
+[2025-07-21T13:41:08.712+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-07-21.pkl
+[2025-07-21T13:41:08.719+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-07-22.pkl
+[2025-07-21T13:41:08.726+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-07-23.pkl
+[2025-07-21T13:41:08.732+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-07-24.pkl
+[2025-07-21T13:41:08.739+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-07-25.pkl
+[2025-07-21T13:41:08.746+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-07-26.pkl
+[2025-07-21T13:41:08.752+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-07-27.pkl
+[2025-07-21T13:41:08.759+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-07-28.pkl
+[2025-07-21T13:41:08.765+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-07-29.pkl
+[2025-07-21T13:41:08.776+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-07-30.pkl
+[2025-07-21T13:41:08.786+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-07-31.pkl
+[2025-07-21T13:41:08.798+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-08-01.pkl
+[2025-07-21T13:41:08.808+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-08-02.pkl
+[2025-07-21T13:41:08.816+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-08-03.pkl
+[2025-07-21T13:41:08.823+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-08-04.pkl
+[2025-07-21T13:41:08.830+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-08-05.pkl
+[2025-07-21T13:41:08.837+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-08-06.pkl
+[2025-07-21T13:41:08.844+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-08-07.pkl
+[2025-07-21T13:41:08.851+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-08-08.pkl
+[2025-07-21T13:41:08.858+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-08-09.pkl
+[2025-07-21T13:41:08.865+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-08-10.pkl
+[2025-07-21T13:41:08.873+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-08-11.pkl
+[2025-07-21T13:41:08.880+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-08-12.pkl
+[2025-07-21T13:41:08.888+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-08-13.pkl
+[2025-07-21T13:41:08.895+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-08-14.pkl
+[2025-07-21T13:41:08.902+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-08-15.pkl
+[2025-07-21T13:41:08.909+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-08-16.pkl
+[2025-07-21T13:41:08.915+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-08-17.pkl
+[2025-07-21T13:41:08.922+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-08-18.pkl
+[2025-07-21T13:41:08.929+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-08-19.pkl
+[2025-07-21T13:41:08.937+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-08-20.pkl
+[2025-07-21T13:41:08.943+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-08-21.pkl
+[2025-07-21T13:41:08.950+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-08-22.pkl
+[2025-07-21T13:41:08.958+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-08-23.pkl
+[2025-07-21T13:41:08.965+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-08-24.pkl
+[2025-07-21T13:41:08.973+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-08-25.pkl
+[2025-07-21T13:41:08.981+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-08-26.pkl
+[2025-07-21T13:41:08.988+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-08-27.pkl
+[2025-07-21T13:41:08.996+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-08-28.pkl
+[2025-07-21T13:41:09.003+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-08-29.pkl
+[2025-07-21T13:41:09.011+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-08-30.pkl
+[2025-07-21T13:41:09.020+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-08-31.pkl
+[2025-07-21T13:41:09.027+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-09-01.pkl
+[2025-07-21T13:41:09.034+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-09-02.pkl
+[2025-07-21T13:41:09.044+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-09-03.pkl
+[2025-07-21T13:41:09.052+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-09-04.pkl
+[2025-07-21T13:41:09.059+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-09-05.pkl
+[2025-07-21T13:41:09.067+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-09-06.pkl
+[2025-07-21T13:41:09.074+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-09-07.pkl
+[2025-07-21T13:41:09.081+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-09-08.pkl
+[2025-07-21T13:41:09.089+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-09-09.pkl
+[2025-07-21T13:41:09.096+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-09-10.pkl
+[2025-07-21T13:41:09.179+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-09-11.pkl
+[2025-07-21T13:41:09.188+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-09-12.pkl
+[2025-07-21T13:41:09.198+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-09-13.pkl
+[2025-07-21T13:41:09.207+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-09-14.pkl
+[2025-07-21T13:41:09.215+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-09-15.pkl
+[2025-07-21T13:41:09.223+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-09-16.pkl
+[2025-07-21T13:41:09.234+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-09-17.pkl
+[2025-07-21T13:41:09.243+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-09-18.pkl
+[2025-07-21T13:41:09.252+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-09-19.pkl
+[2025-07-21T13:41:09.263+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-09-20.pkl
+[2025-07-21T13:41:09.272+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-09-21.pkl
+[2025-07-21T13:41:09.281+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-09-22.pkl
+[2025-07-21T13:41:09.289+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-09-23.pkl
+[2025-07-21T13:41:09.297+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-09-24.pkl
+[2025-07-21T13:41:09.323+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-09-25.pkl
+[2025-07-21T13:41:09.334+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-09-26.pkl
+[2025-07-21T13:41:09.343+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-09-27.pkl
+[2025-07-21T13:41:09.365+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-09-28.pkl
+[2025-07-21T13:41:09.373+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-09-29.pkl
+[2025-07-21T13:41:09.382+0000] {fraud_pipeline_dag.py:26} INFO - Reading /opt/***/data/data_raw/2018-09-30.pkl
+[2025-07-21T13:41:09.550+0000] {fraud_pipeline_dag.py:34} INFO - Total rows to insert: 1754155
+[2025-07-21T13:43:32.737+0000] {fraud_pipeline_dag.py:46} INFO - Data inserted successfully.
+[2025-07-21T13:43:32.780+0000] {python.py:194} INFO - Done. Returned value was: None
+[2025-07-21T13:43:32.785+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=fraud_detection_pipeline, task_id=aggregate_and_store_pickle_data, execution_date=20250721T134105, start_date=20250721T134107, end_date=20250721T134332
+[2025-07-21T13:43:32.838+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-07-21T13:43:32.855+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

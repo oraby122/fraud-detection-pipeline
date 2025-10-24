@@ -1,0 +1,44 @@
+[2025-07-21T14:27:05.485+0000] {logging_mixin.py:151} INFO - Changing /opt/***/logs/dag_id=feature_engineering_dag/run_id=manual__2025-07-21T14:27:03.551913+00:00/task_id=run_feature_engineering permission to 509
+[2025-07-21T14:27:05.486+0000] {logging_mixin.py:151} INFO - Failed to change /opt/***/logs/dag_id=feature_engineering_dag/run_id=manual__2025-07-21T14:27:03.551913+00:00/task_id=run_feature_engineering permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=feature_engineering_dag/run_id=manual__2025-07-21T14:27:03.551913+00:00/task_id=run_feature_engineering'
+[2025-07-21T14:27:05.499+0000] {logging_mixin.py:151} INFO - Changing /opt/***/logs/dag_id=feature_engineering_dag/run_id=manual__2025-07-21T14:27:03.551913+00:00/task_id=run_feature_engineering permission to 509
+[2025-07-21T14:27:05.499+0000] {logging_mixin.py:151} INFO - Failed to change /opt/***/logs/dag_id=feature_engineering_dag/run_id=manual__2025-07-21T14:27:03.551913+00:00/task_id=run_feature_engineering permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=feature_engineering_dag/run_id=manual__2025-07-21T14:27:03.551913+00:00/task_id=run_feature_engineering'
+[2025-07-21T14:27:05.515+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: feature_engineering_dag.run_feature_engineering manual__2025-07-21T14:27:03.551913+00:00 [queued]>
+[2025-07-21T14:27:05.520+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: feature_engineering_dag.run_feature_engineering manual__2025-07-21T14:27:03.551913+00:00 [queued]>
+[2025-07-21T14:27:05.520+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2025-07-21T14:27:05.526+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): run_feature_engineering> on 2025-07-21 14:27:03.551913+00:00
+[2025-07-21T14:27:05.528+0000] {standard_task_runner.py:57} INFO - Started process 359 to run task
+[2025-07-21T14:27:05.530+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'feature_engineering_dag', 'run_feature_engineering', 'manual__2025-07-21T14:27:03.551913+00:00', '--job-id', '62', '--raw', '--subdir', 'DAGS_FOLDER/feature_engineering.py', '--cfg-path', '/tmp/tmpskfh7a3n']
+[2025-07-21T14:27:05.532+0000] {standard_task_runner.py:85} INFO - Job 62: Subtask run_feature_engineering
+[2025-07-21T14:27:05.541+0000] {logging_mixin.py:151} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-21T14:27:05.559+0000] {logging_mixin.py:151} INFO - Changing /opt/***/logs/dag_id=feature_engineering_dag/run_id=manual__2025-07-21T14:27:03.551913+00:00/task_id=run_feature_engineering permission to 509
+[2025-07-21T14:27:05.559+0000] {logging_mixin.py:151} INFO - Failed to change /opt/***/logs/dag_id=feature_engineering_dag/run_id=manual__2025-07-21T14:27:03.551913+00:00/task_id=run_feature_engineering permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=feature_engineering_dag/run_id=manual__2025-07-21T14:27:03.551913+00:00/task_id=run_feature_engineering'
+[2025-07-21T14:27:05.560+0000] {task_command.py:415} INFO - Running <TaskInstance: feature_engineering_dag.run_feature_engineering manual__2025-07-21T14:27:03.551913+00:00 [running]> on host 94007307d8a8
+[2025-07-21T14:27:05.596+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='feature_engineering_dag' AIRFLOW_CTX_TASK_ID='run_feature_engineering' AIRFLOW_CTX_EXECUTION_DATE='2025-07-21T14:27:03.551913+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-07-21T14:27:03.551913+00:00'
+[2025-07-21T14:27:11.114+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/core/indexes/base.py", line 3653, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas/_libs/index.pyx", line 147, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 176, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7080, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'TX_DATETIME'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/feature_engineering.py", line 29, in feature_engineering
+    df['TX_DATETIME'] = pd.to_datetime(df['TX_DATETIME'])
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/core/frame.py", line 3761, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/core/indexes/base.py", line 3655, in get_loc
+    raise KeyError(key) from err
+KeyError: 'TX_DATETIME'
+[2025-07-21T14:27:11.128+0000] {taskinstance.py:1398} INFO - Marking task as UP_FOR_RETRY. dag_id=feature_engineering_dag, task_id=run_feature_engineering, execution_date=20250721T142703, start_date=20250721T142705, end_date=20250721T142711
+[2025-07-21T14:27:11.134+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 62 for task run_feature_engineering ('TX_DATETIME'; 359)
+[2025-07-21T14:27:11.177+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2025-07-21T14:27:11.186+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

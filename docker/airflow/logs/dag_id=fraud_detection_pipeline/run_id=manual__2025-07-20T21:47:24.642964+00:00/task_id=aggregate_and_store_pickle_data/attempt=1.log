@@ -1,0 +1,203 @@
+[2025-07-20T21:47:27.123+0000] {logging_mixin.py:151} INFO - Changing /opt/***/logs/dag_id=fraud_detection_pipeline/run_id=manual__2025-07-20T21:47:24.642964+00:00/task_id=aggregate_and_store_pickle_data permission to 509
+[2025-07-20T21:47:27.124+0000] {logging_mixin.py:151} INFO - Failed to change /opt/***/logs/dag_id=fraud_detection_pipeline/run_id=manual__2025-07-20T21:47:24.642964+00:00/task_id=aggregate_and_store_pickle_data permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=fraud_detection_pipeline/run_id=manual__2025-07-20T21:47:24.642964+00:00/task_id=aggregate_and_store_pickle_data'
+[2025-07-20T21:47:27.142+0000] {logging_mixin.py:151} INFO - Changing /opt/***/logs/dag_id=fraud_detection_pipeline/run_id=manual__2025-07-20T21:47:24.642964+00:00/task_id=aggregate_and_store_pickle_data permission to 509
+[2025-07-20T21:47:27.142+0000] {logging_mixin.py:151} INFO - Failed to change /opt/***/logs/dag_id=fraud_detection_pipeline/run_id=manual__2025-07-20T21:47:24.642964+00:00/task_id=aggregate_and_store_pickle_data permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=fraud_detection_pipeline/run_id=manual__2025-07-20T21:47:24.642964+00:00/task_id=aggregate_and_store_pickle_data'
+[2025-07-20T21:47:27.164+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fraud_detection_pipeline.aggregate_and_store_pickle_data manual__2025-07-20T21:47:24.642964+00:00 [queued]>
+[2025-07-20T21:47:27.169+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fraud_detection_pipeline.aggregate_and_store_pickle_data manual__2025-07-20T21:47:24.642964+00:00 [queued]>
+[2025-07-20T21:47:27.169+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 1
+[2025-07-20T21:47:27.176+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): aggregate_and_store_pickle_data> on 2025-07-20 21:47:24.642964+00:00
+[2025-07-20T21:47:27.179+0000] {standard_task_runner.py:57} INFO - Started process 64 to run task
+[2025-07-20T21:47:27.182+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'fraud_detection_pipeline', 'aggregate_and_store_pickle_data', 'manual__2025-07-20T21:47:24.642964+00:00', '--job-id', '12', '--raw', '--subdir', 'DAGS_FOLDER/fraud_pipeline_dag.py', '--cfg-path', '/tmp/tmpqf0k7j0n']
+[2025-07-20T21:47:27.183+0000] {standard_task_runner.py:85} INFO - Job 12: Subtask aggregate_and_store_pickle_data
+[2025-07-20T21:47:27.194+0000] {logging_mixin.py:151} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-20T21:47:27.215+0000] {logging_mixin.py:151} INFO - Changing /opt/***/logs/dag_id=fraud_detection_pipeline/run_id=manual__2025-07-20T21:47:24.642964+00:00/task_id=aggregate_and_store_pickle_data permission to 509
+[2025-07-20T21:47:27.215+0000] {logging_mixin.py:151} INFO - Failed to change /opt/***/logs/dag_id=fraud_detection_pipeline/run_id=manual__2025-07-20T21:47:24.642964+00:00/task_id=aggregate_and_store_pickle_data permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=fraud_detection_pipeline/run_id=manual__2025-07-20T21:47:24.642964+00:00/task_id=aggregate_and_store_pickle_data'
+[2025-07-20T21:47:27.216+0000] {task_command.py:415} INFO - Running <TaskInstance: fraud_detection_pipeline.aggregate_and_store_pickle_data manual__2025-07-20T21:47:24.642964+00:00 [running]> on host da615bb59f10
+[2025-07-20T21:47:27.265+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='fraud_detection_pipeline' AIRFLOW_CTX_TASK_ID='aggregate_and_store_pickle_data' AIRFLOW_CTX_EXECUTION_DATE='2025-07-20T21:47:24.642964+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-07-20T21:47:24.642964+00:00'
+[2025-07-20T21:47:27.266+0000] {fraud_pipeline_dag.py:15} INFO - Reading pickle files from /opt/***/data/data_raw
+[2025-07-20T21:47:27.267+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-01.pkl
+[2025-07-20T21:47:27.282+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-02.pkl
+[2025-07-20T21:47:27.294+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-03.pkl
+[2025-07-20T21:47:27.305+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-04.pkl
+[2025-07-20T21:47:27.316+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-05.pkl
+[2025-07-20T21:47:27.327+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-06.pkl
+[2025-07-20T21:47:27.338+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-07.pkl
+[2025-07-20T21:47:27.352+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-08.pkl
+[2025-07-20T21:47:27.365+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-09.pkl
+[2025-07-20T21:47:27.377+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-10.pkl
+[2025-07-20T21:47:27.391+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-11.pkl
+[2025-07-20T21:47:27.403+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-12.pkl
+[2025-07-20T21:47:27.415+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-13.pkl
+[2025-07-20T21:47:27.425+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-14.pkl
+[2025-07-20T21:47:27.436+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-15.pkl
+[2025-07-20T21:47:27.446+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-16.pkl
+[2025-07-20T21:47:27.460+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-17.pkl
+[2025-07-20T21:47:27.471+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-18.pkl
+[2025-07-20T21:47:27.481+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-19.pkl
+[2025-07-20T21:47:27.492+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-20.pkl
+[2025-07-20T21:47:27.502+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-21.pkl
+[2025-07-20T21:47:27.512+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-22.pkl
+[2025-07-20T21:47:27.523+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-23.pkl
+[2025-07-20T21:47:27.535+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-24.pkl
+[2025-07-20T21:47:27.553+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-25.pkl
+[2025-07-20T21:47:27.564+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-26.pkl
+[2025-07-20T21:47:27.575+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-27.pkl
+[2025-07-20T21:47:27.585+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-28.pkl
+[2025-07-20T21:47:27.594+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-29.pkl
+[2025-07-20T21:47:27.604+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-04-30.pkl
+[2025-07-20T21:47:27.613+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-01.pkl
+[2025-07-20T21:47:27.622+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-02.pkl
+[2025-07-20T21:47:27.631+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-03.pkl
+[2025-07-20T21:47:27.640+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-04.pkl
+[2025-07-20T21:47:27.650+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-05.pkl
+[2025-07-20T21:47:27.659+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-06.pkl
+[2025-07-20T21:47:27.669+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-07.pkl
+[2025-07-20T21:47:27.678+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-08.pkl
+[2025-07-20T21:47:27.688+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-09.pkl
+[2025-07-20T21:47:27.697+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-10.pkl
+[2025-07-20T21:47:27.707+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-11.pkl
+[2025-07-20T21:47:27.717+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-12.pkl
+[2025-07-20T21:47:27.727+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-13.pkl
+[2025-07-20T21:47:27.737+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-14.pkl
+[2025-07-20T21:47:27.749+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-15.pkl
+[2025-07-20T21:47:27.758+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-16.pkl
+[2025-07-20T21:47:27.768+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-17.pkl
+[2025-07-20T21:47:27.778+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-18.pkl
+[2025-07-20T21:47:27.788+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-19.pkl
+[2025-07-20T21:47:27.797+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-20.pkl
+[2025-07-20T21:47:27.806+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-21.pkl
+[2025-07-20T21:47:27.816+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-22.pkl
+[2025-07-20T21:47:27.826+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-23.pkl
+[2025-07-20T21:47:27.838+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-24.pkl
+[2025-07-20T21:47:27.848+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-25.pkl
+[2025-07-20T21:47:27.857+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-26.pkl
+[2025-07-20T21:47:27.868+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-27.pkl
+[2025-07-20T21:47:27.897+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-28.pkl
+[2025-07-20T21:47:27.910+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-29.pkl
+[2025-07-20T21:47:27.919+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-30.pkl
+[2025-07-20T21:47:27.959+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-05-31.pkl
+[2025-07-20T21:47:27.972+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-01.pkl
+[2025-07-20T21:47:27.988+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-02.pkl
+[2025-07-20T21:47:27.998+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-03.pkl
+[2025-07-20T21:47:28.007+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-04.pkl
+[2025-07-20T21:47:28.018+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-05.pkl
+[2025-07-20T21:47:28.030+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-06.pkl
+[2025-07-20T21:47:28.040+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-07.pkl
+[2025-07-20T21:47:28.049+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-08.pkl
+[2025-07-20T21:47:28.059+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-09.pkl
+[2025-07-20T21:47:28.069+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-10.pkl
+[2025-07-20T21:47:28.079+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-11.pkl
+[2025-07-20T21:47:28.089+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-12.pkl
+[2025-07-20T21:47:28.098+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-13.pkl
+[2025-07-20T21:47:28.109+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-14.pkl
+[2025-07-20T21:47:28.119+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-15.pkl
+[2025-07-20T21:47:28.129+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-16.pkl
+[2025-07-20T21:47:28.139+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-17.pkl
+[2025-07-20T21:47:28.148+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-18.pkl
+[2025-07-20T21:47:28.158+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-19.pkl
+[2025-07-20T21:47:28.167+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-20.pkl
+[2025-07-20T21:47:28.177+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-21.pkl
+[2025-07-20T21:47:28.187+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-22.pkl
+[2025-07-20T21:47:28.207+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-23.pkl
+[2025-07-20T21:47:28.219+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-24.pkl
+[2025-07-20T21:47:28.234+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-25.pkl
+[2025-07-20T21:47:28.248+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-26.pkl
+[2025-07-20T21:47:28.260+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-27.pkl
+[2025-07-20T21:47:28.271+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-28.pkl
+[2025-07-20T21:47:28.286+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-29.pkl
+[2025-07-20T21:47:28.297+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-06-30.pkl
+[2025-07-20T21:47:28.308+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-01.pkl
+[2025-07-20T21:47:28.317+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-02.pkl
+[2025-07-20T21:47:28.327+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-03.pkl
+[2025-07-20T21:47:28.336+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-04.pkl
+[2025-07-20T21:47:28.346+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-05.pkl
+[2025-07-20T21:47:28.382+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-06.pkl
+[2025-07-20T21:47:28.393+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-07.pkl
+[2025-07-20T21:47:28.403+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-08.pkl
+[2025-07-20T21:47:28.414+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-09.pkl
+[2025-07-20T21:47:28.424+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-10.pkl
+[2025-07-20T21:47:28.440+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-11.pkl
+[2025-07-20T21:47:28.450+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-12.pkl
+[2025-07-20T21:47:28.459+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-13.pkl
+[2025-07-20T21:47:28.469+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-14.pkl
+[2025-07-20T21:47:28.478+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-15.pkl
+[2025-07-20T21:47:28.489+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-16.pkl
+[2025-07-20T21:47:28.498+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-17.pkl
+[2025-07-20T21:47:28.510+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-18.pkl
+[2025-07-20T21:47:28.522+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-19.pkl
+[2025-07-20T21:47:28.532+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-20.pkl
+[2025-07-20T21:47:28.544+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-21.pkl
+[2025-07-20T21:47:28.555+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-22.pkl
+[2025-07-20T21:47:28.564+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-23.pkl
+[2025-07-20T21:47:28.575+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-24.pkl
+[2025-07-20T21:47:28.584+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-25.pkl
+[2025-07-20T21:47:28.597+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-26.pkl
+[2025-07-20T21:47:28.607+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-27.pkl
+[2025-07-20T21:47:28.616+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-28.pkl
+[2025-07-20T21:47:28.626+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-29.pkl
+[2025-07-20T21:47:28.635+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-30.pkl
+[2025-07-20T21:47:28.645+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-07-31.pkl
+[2025-07-20T21:47:28.654+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-01.pkl
+[2025-07-20T21:47:28.663+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-02.pkl
+[2025-07-20T21:47:28.673+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-03.pkl
+[2025-07-20T21:47:28.683+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-04.pkl
+[2025-07-20T21:47:28.696+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-05.pkl
+[2025-07-20T21:47:28.708+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-06.pkl
+[2025-07-20T21:47:28.718+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-07.pkl
+[2025-07-20T21:47:28.728+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-08.pkl
+[2025-07-20T21:47:28.737+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-09.pkl
+[2025-07-20T21:47:28.746+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-10.pkl
+[2025-07-20T21:47:28.755+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-11.pkl
+[2025-07-20T21:47:28.765+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-12.pkl
+[2025-07-20T21:47:28.776+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-13.pkl
+[2025-07-20T21:47:28.795+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-14.pkl
+[2025-07-20T21:47:28.815+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-15.pkl
+[2025-07-20T21:47:28.828+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-16.pkl
+[2025-07-20T21:47:28.840+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-17.pkl
+[2025-07-20T21:47:28.921+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-18.pkl
+[2025-07-20T21:47:28.932+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-19.pkl
+[2025-07-20T21:47:28.943+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-20.pkl
+[2025-07-20T21:47:28.953+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-21.pkl
+[2025-07-20T21:47:28.963+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-22.pkl
+[2025-07-20T21:47:28.973+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-23.pkl
+[2025-07-20T21:47:28.998+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-24.pkl
+[2025-07-20T21:47:29.008+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-25.pkl
+[2025-07-20T21:47:29.018+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-26.pkl
+[2025-07-20T21:47:29.030+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-27.pkl
+[2025-07-20T21:47:29.071+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-28.pkl
+[2025-07-20T21:47:29.084+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-29.pkl
+[2025-07-20T21:47:29.096+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-30.pkl
+[2025-07-20T21:47:29.107+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-08-31.pkl
+[2025-07-20T21:47:29.118+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-01.pkl
+[2025-07-20T21:47:29.129+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-02.pkl
+[2025-07-20T21:47:29.140+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-03.pkl
+[2025-07-20T21:47:29.149+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-04.pkl
+[2025-07-20T21:47:29.159+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-05.pkl
+[2025-07-20T21:47:29.169+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-06.pkl
+[2025-07-20T21:47:29.179+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-07.pkl
+[2025-07-20T21:47:29.188+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-08.pkl
+[2025-07-20T21:47:29.198+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-09.pkl
+[2025-07-20T21:47:29.210+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-10.pkl
+[2025-07-20T21:47:29.221+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-11.pkl
+[2025-07-20T21:47:29.231+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-12.pkl
+[2025-07-20T21:47:29.244+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-13.pkl
+[2025-07-20T21:47:29.255+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-14.pkl
+[2025-07-20T21:47:29.267+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-15.pkl
+[2025-07-20T21:47:29.278+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-16.pkl
+[2025-07-20T21:47:29.288+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-17.pkl
+[2025-07-20T21:47:29.299+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-18.pkl
+[2025-07-20T21:47:29.308+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-19.pkl
+[2025-07-20T21:47:29.319+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-20.pkl
+[2025-07-20T21:47:29.329+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-21.pkl
+[2025-07-20T21:47:29.339+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-22.pkl
+[2025-07-20T21:47:29.349+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-23.pkl
+[2025-07-20T21:47:29.359+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-24.pkl
+[2025-07-20T21:47:29.369+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-25.pkl
+[2025-07-20T21:47:29.378+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-26.pkl
+[2025-07-20T21:47:29.389+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-27.pkl
+[2025-07-20T21:47:29.398+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-28.pkl
+[2025-07-20T21:47:29.410+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-29.pkl
+[2025-07-20T21:47:29.420+0000] {fraud_pipeline_dag.py:20} INFO - Reading 2018-09-30.pkl
+[2025-07-20T21:47:29.570+0000] {fraud_pipeline_dag.py:31} INFO - Total rows to insert: 1754155
+[2025-07-20T21:48:23.784+0000] {local_task_job_runner.py:228} INFO - Task exited with return code -9
+[2025-07-20T21:48:23.937+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

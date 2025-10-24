@@ -1,0 +1,33 @@
+[2025-07-21T14:29:49.372+0000] {logging_mixin.py:151} INFO - Changing /opt/***/logs/dag_id=feature_engineering_dag/run_id=manual__2025-07-21T14:27:03.551913+00:00/task_id=run_feature_engineering permission to 509
+[2025-07-21T14:29:49.373+0000] {logging_mixin.py:151} INFO - Failed to change /opt/***/logs/dag_id=feature_engineering_dag/run_id=manual__2025-07-21T14:27:03.551913+00:00/task_id=run_feature_engineering permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=feature_engineering_dag/run_id=manual__2025-07-21T14:27:03.551913+00:00/task_id=run_feature_engineering'
+[2025-07-21T14:29:49.385+0000] {logging_mixin.py:151} INFO - Changing /opt/***/logs/dag_id=feature_engineering_dag/run_id=manual__2025-07-21T14:27:03.551913+00:00/task_id=run_feature_engineering permission to 509
+[2025-07-21T14:29:49.385+0000] {logging_mixin.py:151} INFO - Failed to change /opt/***/logs/dag_id=feature_engineering_dag/run_id=manual__2025-07-21T14:27:03.551913+00:00/task_id=run_feature_engineering permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=feature_engineering_dag/run_id=manual__2025-07-21T14:27:03.551913+00:00/task_id=run_feature_engineering'
+[2025-07-21T14:29:49.401+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: feature_engineering_dag.run_feature_engineering manual__2025-07-21T14:27:03.551913+00:00 [queued]>
+[2025-07-21T14:29:49.405+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: feature_engineering_dag.run_feature_engineering manual__2025-07-21T14:27:03.551913+00:00 [queued]>
+[2025-07-21T14:29:49.405+0000] {taskinstance.py:1359} INFO - Starting attempt 2 of 3
+[2025-07-21T14:29:49.411+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): run_feature_engineering> on 2025-07-21 14:27:03.551913+00:00
+[2025-07-21T14:29:49.414+0000] {standard_task_runner.py:57} INFO - Started process 408 to run task
+[2025-07-21T14:29:49.415+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'feature_engineering_dag', 'run_feature_engineering', 'manual__2025-07-21T14:27:03.551913+00:00', '--job-id', '63', '--raw', '--subdir', 'DAGS_FOLDER/feature_engineering.py', '--cfg-path', '/tmp/tmpiy33149c']
+[2025-07-21T14:29:49.417+0000] {standard_task_runner.py:85} INFO - Job 63: Subtask run_feature_engineering
+[2025-07-21T14:29:49.426+0000] {logging_mixin.py:151} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-21T14:29:49.443+0000] {logging_mixin.py:151} INFO - Changing /opt/***/logs/dag_id=feature_engineering_dag/run_id=manual__2025-07-21T14:27:03.551913+00:00/task_id=run_feature_engineering permission to 509
+[2025-07-21T14:29:49.444+0000] {logging_mixin.py:151} INFO - Failed to change /opt/***/logs/dag_id=feature_engineering_dag/run_id=manual__2025-07-21T14:27:03.551913+00:00/task_id=run_feature_engineering permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=feature_engineering_dag/run_id=manual__2025-07-21T14:27:03.551913+00:00/task_id=run_feature_engineering'
+[2025-07-21T14:29:49.445+0000] {task_command.py:415} INFO - Running <TaskInstance: feature_engineering_dag.run_feature_engineering manual__2025-07-21T14:27:03.551913+00:00 [running]> on host 94007307d8a8
+[2025-07-21T14:29:49.481+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='feature_engineering_dag' AIRFLOW_CTX_TASK_ID='run_feature_engineering' AIRFLOW_CTX_EXECUTION_DATE='2025-07-21T14:27:03.551913+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-07-21T14:27:03.551913+00:00'
+[2025-07-21T14:30:06.148+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/feature_engineering.py", line 53, in feature_engineering
+    df.reset_index(inplace=True)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/core/frame.py", line 6209, in reset_index
+    new_obj.insert(
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/core/frame.py", line 4772, in insert
+    raise ValueError(f"cannot insert {column}, already exists")
+ValueError: cannot insert customer_id, already exists
+[2025-07-21T14:30:06.158+0000] {taskinstance.py:1398} INFO - Marking task as UP_FOR_RETRY. dag_id=feature_engineering_dag, task_id=run_feature_engineering, execution_date=20250721T142703, start_date=20250721T142949, end_date=20250721T143006
+[2025-07-21T14:30:06.163+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 63 for task run_feature_engineering (cannot insert customer_id, already exists; 408)
+[2025-07-21T14:30:06.191+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2025-07-21T14:30:06.200+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check
