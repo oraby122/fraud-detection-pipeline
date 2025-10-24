@@ -6,23 +6,25 @@ An end-to-end fraud detection system built with:
 - **Docker** for reproducibility and deployment
 
 ## 📂 Project Structure
+'''
 .
 ├── README.md
 ├── data
-│   └── data.tar.gz
+│   └── data.tar.gz
 ├── docker
-│   ├── airflow
-│   │   ├── Dockerfile
-│   │   ├── dags
-│   │   ├── docker-compose.yaml
-│   │   └── logs
-│   └── app
-│       ├── Dockerfile
-│       └── requirements.txt
+│   ├── airflow
+│   │   ├── Dockerfile
+│   │   ├── dags
+│   │   ├── docker-compose.yaml
+│   │   └── logs
+│   └── app
+│       ├── Dockerfile
+│       └── requirements.txt
 └── src
     ├── data_prep
-    │   ├── data_inspection.py
-    │   └── feature_engineering.py
+    │   ├── data_inspection.py
+    │   └── feature_engineering.py
     ├── models
-    │   └── model.py
+    │   └── model.py
     └── utils
+'''
